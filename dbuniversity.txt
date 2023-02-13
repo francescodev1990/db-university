@@ -1,0 +1,32 @@
+SELECT * 
+FROM `students` 
+WHERE YEAR(`date_of_birth`) = 1990; 
+
+SELECT *
+FROM `courses`
+WHERE `cfu`> 10;
+
+SELECT *
+FROM `students`
+WHERE YEAR > 30;
+
+SELECT *
+FROM `year`, `month`
+WHERE `year`= 1
+AND `month`= `Primo semestre`;
+
+SELECT *
+FROM `appelli_esame`
+WHERE `hour` = > 14.00
+AND `date` = 20/06/2020;
+
+SELECT *
+FROM `courses`
+WHERE `laurea_magistrale`;
+
+SELECT *
+COUNT FROM `departments`;
+
+SELECT *
+COUNT FROM `teachers`
+WHERE `phone` IS NULL
